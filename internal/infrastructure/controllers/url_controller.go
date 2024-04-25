@@ -4,9 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/google/uuid"
-
 	"github.com/ViniciusCrisol/minicurso-unifacef-2024/internal/app"
+	"github.com/ViniciusCrisol/minicurso-unifacef-2024/internal/helpers"
 )
 
 type URLOutputDTO struct {
@@ -36,7 +35,7 @@ func (controller *URLController) Save(response http.ResponseWriter, request *htt
 		response.WriteHeader(http.StatusUnprocessableEntity)
 		return
 	}
-	if err = controller.urlService.Save(uuid.NewString(), dto.URL); err != nil {
+	if err = controller.urlService.Save(helpers.RandomString(), dto.URL); err != nil {
 		response.WriteHeader(http.StatusBadRequest)
 		return
 	}
