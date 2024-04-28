@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "8e79a787-ae73-4fa2-9656-e0df2f91b300",
+		"name": "minicurso-unifacef-2024",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20783106",
+		"_collection_link": "https://www.postman.com/descent-module-geoscientist-57542813/workspace/minicurso-unifacef-2024/collection/20783106-8e79a787-ae73-4fa2-9656-e0df2f91b300?action=share&source=collection_link&creator=20783106"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/urls",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://oglobo.globo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/urls",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"urls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/urls",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/urls",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"urls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/{short_code}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/{short_code}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"{short_code}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

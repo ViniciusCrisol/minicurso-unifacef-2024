@@ -8,6 +8,7 @@ import (
 	"github.com/ViniciusCrisol/minicurso-unifacef-2024/internal/infrastructure/persistence"
 )
 
+// Para iniciar o programa, execute na pasta raiz do projeto o seguinte comando: go run cmd/httpserver/httpserver.go
 func main() {
 	memURLDAO := persistence.NewMemURLDAO()
 	urlService := app.NewURLService(&memURLDAO)
