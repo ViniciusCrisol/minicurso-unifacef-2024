@@ -2,7 +2,7 @@
 
 Código-fonte apresentado no minicurso Uni-FACEF 2024.
 
-### Convenções e instrumentação
+## Convenções e instrumentação
 
 1. Módulos com nome em minúsculas, sem caracteres especiais;
 2. Variáveis em _camel case_;
@@ -11,7 +11,7 @@ Código-fonte apresentado no minicurso Uni-FACEF 2024.
 Ferramentas de indentação são fornecidas pela própria linguagem, eliminando a necessidade de softwares como Prettier e
 ESLint do ecossistema JavaScript.
 
-### Proposta de desenvolvimento
+## Proposta de desenvolvimento
 
 O sistema criado é um clássico das entrevistas de _system-design_: um encurtador de URLs. A aplicação segue a seguinte
 estrutura:
@@ -25,7 +25,7 @@ o _link_ de redirecionamento e finalmente, uma que lista os _links_ cadastrados.
 <img src="docs/README/cadastra-uma-nova-url.png" width="475"/><br>
 <img src="docs/README/lista-as-urls-salvas.png" width="475"/><br>
 
-### Estrutura do sistema
+## Estrutura do sistema
 
 A estrutura da aplicação foi inspirada nos conceitos do livro "Arquitetura Limpa". O diagrama a seguir ilustra a
 organização do software, semelhante ao apresentado pelo autor:
@@ -45,7 +45,7 @@ Finalmente, na camada mais externa, é implementada a infraestrutura. Esta é re
 externos à aplicação. Bons exemplos de responsabilidades desta camada incluem a implementação de interfaces definidas
 pelas camadas internas, como abstrações da lógica de acesso a dados, e a gestão da comunicação com os clientes externos.
 
-### Pacotes utilizados
+## Pacotes utilizados
 
 A linguagem de programação Go, por ser extremamente recente, possui um instrumental nativo que atende muito bem às
 necessidades do desenvolvimento moderno. Em projetos criados com essa linguagem, não é comum encontrar um grande número
